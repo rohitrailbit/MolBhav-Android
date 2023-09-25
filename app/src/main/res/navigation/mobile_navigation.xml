@@ -12,14 +12,26 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.molbhav.ui.gallery.GalleryFragment"
+        android:id="@+id/nav_search"
+        android:name="com.example.molbhav.ui.explore.ExploreFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.molbhav.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_cart"
+        android:name="com.example.molbhav.ui.cart.CartFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.molbhav.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_offer"
+        android:name="com.example.molbhav.ui.offers.OffersFragment"
+        android:label="Offers"
+        tools:layout="@layout/fragment_offers" />
 </navigation>
