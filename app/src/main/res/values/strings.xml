@@ -10,4 +10,12 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="app_footer">© 2023. Developed By NICS Pvt Ltd</string>
+    <string name="explore">Explore</string>
+    <string name="cart">Cart</string>
+    <string name="offer">Offer</string>
+    <string name="profile">Profile</string>
+    <string name="todo">TODO</string>
+    <string name="please_check_your_connection">Please Check Your Connection</string>
+    <string name="connection_not_found">Connection Not Found</string>
 </resources>
