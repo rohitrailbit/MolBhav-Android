@@ -21,7 +21,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ApiClient {
 //    public static final String BASE_URL = "https://tricareservice.onrender.com";
 //    public static final String BASE_URL = "http://3.110.83.143:9001";
-    public static final String BASE_URL = "https://f772-103-55-61-64.ngrok-free.app";
+    public static final String BASE_URL = "https://fc77-103-55-61-64.ngrok-free.app";
 
     private Retrofit retrofit;
 

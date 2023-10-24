@@ -1,4 +1,4 @@
-package com.example.molbhav.ui.offers;
+package com.example.molbhav.ui.vendor.home;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -14,24 +14,24 @@ import android.view.ViewGroup;
 
 import com.example.molbhav.R;
 
-public class OffersFragment extends Fragment {
+public class VendorDashboard extends Fragment {
 
-    private OffersViewModel mViewModel;
+    private VendorDashboardViewModel mViewModel;
 
-    public static OffersFragment newInstance() {
-        return new OffersFragment();
+    public static VendorDashboard newInstance() {
+        return new VendorDashboard();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_offers, container, false);
+        return inflater.inflate(R.layout.fragment_vendor_dashboard, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(OffersViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(VendorDashboardViewModel.class);
         // TODO: Use the ViewModel
     }
 

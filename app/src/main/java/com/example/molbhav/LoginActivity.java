@@ -119,21 +119,21 @@ public class LoginActivity extends AppCompatActivity {
                     Log.d("Response Token ",  authResponse.getToken());
                     Log.d("User Details ",  authResponse.getUser().toString());
 
-                    int userId = authResponse.getUser().getId();
+                    String userId = authResponse.getUser().getId();
                     String userType = authResponse.getUser().getRole().getName();
-                    int userTypeId = authResponse.getUser().getRole().getId();
+                    String RoleId = authResponse.getUser().getRole().getId();
 
                     Log.d("userType", userType);
                     Log.d("userId", String.valueOf(userId));
                     Log.d("usertype", userType);
-                    Log.d("userTypeId", String.valueOf(userTypeId));
+                    Log.d("userTypeId", String.valueOf(RoleId));
 
                     Toast.makeText(LoginActivity.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
 //
                     SharedPreferences.Editor login_edit = sharedPreferences.edit();
                     login_edit.putBoolean("is_logged", true);
-                    login_edit.putInt("userId", userId);
-                    login_edit.putInt("userTypeId", userTypeId);
+                    login_edit.putString("userId", userId);
+                    login_edit.putString("userTypeId", RoleId);
                     login_edit.putString("userType", userType);
                     login_edit.putString("name", authResponse.getUser().getName());
                     login_edit.putString("mobile", authResponse.getUser().getContact());

@@ -7,31 +7,31 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.molbhav.ui.home.HomeFragment"
+        android:name="com.example.molbhav.ui.customer.home.CustomerDashboard"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_search"
-        android:name="com.example.molbhav.ui.explore.ExploreFragment"
+        android:name="com.example.molbhav.ui.customer.explore.ExploreFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_cart"
-        android:name="com.example.molbhav.ui.cart.CartFragment"
+        android:name="com.example.molbhav.ui.customer.cart.CartFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
         android:id="@+id/nav_profile"
-        android:name="com.example.molbhav.ui.profile.ProfileFragment"
+        android:name="com.example.molbhav.ui.customer.profile.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/nav_offer"
-        android:name="com.example.molbhav.ui.offers.OffersFragment"
+        android:name="com.example.molbhav.ui.customer.offers.OffersFragment"
         android:label="Offers"
         tools:layout="@layout/fragment_offers" />
 </navigation>

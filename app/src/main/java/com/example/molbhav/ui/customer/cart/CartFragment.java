@@ -1,4 +1,4 @@
-package com.example.molbhav.ui.cart;
+package com.example.molbhav.ui.customer.cart;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

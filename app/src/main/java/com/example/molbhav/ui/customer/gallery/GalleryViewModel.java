@@ -1,14 +1,14 @@
-package com.example.molbhav.ui.explore;
+package com.example.molbhav.ui.customer.gallery;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ExploreViewModel extends ViewModel {
+public class GalleryViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public ExploreViewModel() {
+    public GalleryViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is gallery fragment");
     }

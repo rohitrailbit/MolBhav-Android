@@ -1,17 +1,19 @@
 package com.example.molbhav.entity;
 
+import androidx.annotation.NonNull;
+
 import java.io.Serializable;
 
 public class Role implements Serializable {
 
-    private Integer id;
+    private String  id;
     private String name;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -23,10 +25,11 @@ public class Role implements Serializable {
         this.name = name;
     }
 
+    @NonNull
     @Override
     public String toString() {
         return "Role{" +
-                "id=" + id +
+                "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 '}';
     }

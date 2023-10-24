@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_vendor_dashboard">
+
+    <fragment
+        android:id="@+id/nav_vendor_dashboard"
+        android:name="com.example.molbhav.ui.vendor.home.VendorDashboard"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_vendor_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_vendor_profile"
+        android:name="com.example.molbhav.ui.vendor.profile.VendorProfile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_vendor_profile" />
+
+    <fragment
+        android:id="@+id/nav_vendor_products"
+        android:name="com.example.molbhav.ui.vendor.products.VendorProducts"
+        android:label="Products"
+        tools:layout="@layout/fragment_vendor_products" />
+</navigation>

@@ -1,4 +1,4 @@
-package com.example.molbhav.ui.explore;
+package com.example.molbhav.ui.customer.explore;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

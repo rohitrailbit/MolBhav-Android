@@ -1,4 +1,4 @@
-package com.example.molbhav.ui.offers;
+package com.example.molbhav.ui.customer.offers;
 
 import androidx.lifecycle.ViewModel;
 

@@ -1,30 +1,39 @@
 package com.example.molbhav.entity;
 
+import androidx.annotation.NonNull;
+
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
 public class User implements Serializable {
 
-    private int id;
+    private String id;
+    private String adminId;
     private String name;
-    private String email;
-    private String password;
     private String contact;
+    private String password;
     private String areaPin;
     private String city;
     private String state;
+    private String email;
     private String address;
+    private Boolean status = true;
     private Role role;
-    private LocalDateTime dateJoined;
-    private LocalDateTime dateUpdated;
-    private LocalDateTime  timeStamp;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
+    }
+
+    public String getAdminId() {
+        return adminId;
+    }
+
+    public void setAdminId(String adminId) {
+        this.adminId = adminId;
     }
 
     public String getName() {
@@ -35,12 +44,12 @@ public class User implements Serializable {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
+    public String getContact() {
+        return contact;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setContact(String contact) {
+        this.contact = contact;
     }
 
     public String getPassword() {
@@ -49,14 +58,6 @@ public class User implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getContact() {
-        return contact;
-    }
-
-    public void setContact(String contact) {
-        this.contact = contact;
     }
 
     public String getAreaPin() {
@@ -83,12 +84,28 @@ public class User implements Serializable {
         this.state = state;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getAddress() {
         return address;
     }
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
     }
 
     public Role getRole() {
@@ -99,46 +116,22 @@ public class User implements Serializable {
         this.role = role;
     }
 
-    public LocalDateTime getDateJoined() {
-        return dateJoined;
-    }
-
-    public void setDateJoined(LocalDateTime dateJoined) {
-        this.dateJoined = dateJoined;
-    }
-
-    public LocalDateTime getDateUpdated() {
-        return dateUpdated;
-    }
-
-    public void setDateUpdated(LocalDateTime dateUpdated) {
-        this.dateUpdated = dateUpdated;
-    }
-
-    public LocalDateTime getTimeStamp() {
-        return timeStamp;
-    }
-
-    public void setTimeStamp(LocalDateTime timeStamp) {
-        this.timeStamp = timeStamp;
-    }
-
+    @NonNull
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
+                "id='" + id + '\'' +
+                ", adminId='" + adminId + '\'' +
                 ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
                 ", contact='" + contact + '\'' +
+                ", password='" + password + '\'' +
                 ", areaPin='" + areaPin + '\'' +
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
+                ", email='" + email + '\'' +
                 ", address='" + address + '\'' +
+                ", status=" + status +
                 ", role=" + role +
-                ", dateJoined=" + dateJoined +
-                ", dateUpdated=" + dateUpdated +
-                ", timeStamp=" + timeStamp +
                 '}';
     }
 }

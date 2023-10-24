@@ -25,6 +25,8 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -35,6 +37,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MolBhav"
         tools:targetApi="34" >
+
+        <service android:name=".service.TokenCheckService" />
         <activity
             android:name=".LoginActivity"
             android:theme="@style/Theme.MolBhav.NoActionBar"

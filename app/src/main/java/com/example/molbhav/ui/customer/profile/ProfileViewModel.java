@@ -1,4 +1,4 @@
-package com.example.molbhav.ui.profile;
+package com.example.molbhav.ui.customer.profile;
 
 import androidx.lifecycle.ViewModel;
 
