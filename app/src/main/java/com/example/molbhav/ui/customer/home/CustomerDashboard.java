@@ -9,8 +9,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.viewpager.widget.ViewPager;
 
+import com.example.molbhav.R;
+import com.example.molbhav.adapters.ImageSliderAdapter;
 import com.example.molbhav.databinding.FragmentHomeBinding;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class CustomerDashboard extends Fragment {
 
@@ -24,8 +30,19 @@ public class CustomerDashboard extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+//        final TextView textView = binding.textHome;
+
+        ViewPager viewPager = binding.viewPager;
+        List<Integer> imageList = Arrays.asList(
+                R.drawable.sample1,
+                R.drawable.sample2,
+                R.drawable.sample3,
+                R.drawable.sample4
+        );
+        ImageSliderAdapter adapter = new ImageSliderAdapter(requireActivity(), imageList);
+        viewPager.setAdapter(adapter);
+
+
         return root;
     }
 
