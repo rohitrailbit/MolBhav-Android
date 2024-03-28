@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_admin_dashboard">
+
+    <fragment
+        android:id="@+id/nav_admin_dashboard"
+        android:name="com.example.molbhav.ui.admin.home.AdminDashboardFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_admin_dashboard" >
+
+        <action
+            android:id="@+id/action_dashboard_to_catagory_management"
+            app:destination="@id/nav_admin_catagory_management"
+            app:popUpTo="@+id/nav_admin_dashboard"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_admin_profile"
+        android:name="com.example.molbhav.ui.admin.profile.AdminProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_admin_profile" />
+
+    <fragment
+        android:id="@+id/nav_admin_catagory_management"
+        android:name="com.example.molbhav.ui.admin.catagory.catagoryManagement.CatagoryManagementFragment"
+        android:label="Catagory Management"
+        tools:layout="@layout/fragment_catagory_management" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_admin_add_catagory"
+        android:name="com.example.molbhav.ui.admin.catagory.addCatagory.AddCatagoryFragment"
+        android:label="Add Catagory"
+        tools:layout="@layout/fragment_add_catagory" >
+    </fragment>
+
+</navigation>

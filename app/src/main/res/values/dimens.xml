@@ -52,5 +52,7 @@
 
     <dimen name="AmountHolder">80dp</dimen>
 
+    <dimen name="boxRadius">10dp</dimen>
+
 
 </resources>

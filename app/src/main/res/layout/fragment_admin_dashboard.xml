@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.vendor.home.VendorDashboard">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:padding="16dp"
+        android:rowCount="2"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="@dimen/fontsizeX15"
+            android:id="@+id/iconCatagoryManagement"
+            android:layout_columnWeight="1"
+            android:src="@drawable/categories128"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/dashboardicon"
+            android:background="@drawable/ripple_icon_effect" />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="@dimen/fontsizeX15"
+            android:src="@drawable/categories128"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/dashboardicon"
+            android:background="@drawable/ripple_icon_effect" />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="@dimen/fontsizeX15"
+            android:src="@drawable/categories128"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/dashboardicon"
+            android:background="@drawable/ripple_icon_effect" />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="@dimen/fontsizeX15"
+            android:layout_columnWeight="1"
+            android:src="@drawable/categories128"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/dashboardicon"
+            android:background="@drawable/ripple_icon_effect" />
+
+
+
+        <!-- Add more icons as needed -->
+</GridLayout>
+
+</RelativeLayout>

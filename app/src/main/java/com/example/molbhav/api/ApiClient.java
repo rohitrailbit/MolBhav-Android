@@ -21,13 +21,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ApiClient {
 //    public static final String BASE_URL = "https://tricareservice.onrender.com";
 //    public static final String BASE_URL = "http://3.110.83.143:9001";
-    public static final String BASE_URL = "https://d0df-2405-201-4003-794e-7865-222a-9c8d-54a6.ngrok-free.app";
-
+    public static final String BASE_URL = "https://0810-103-55-61-64.ngrok-free.app";
     private Retrofit retrofit;
-
     public String authToken;
     SharedPreferences sharedPreferences;
-
     public ApiClient(Activity context){
         sharedPreferences = context.getSharedPreferences(LoginActivity.MyPREFERENCES, Context.MODE_PRIVATE);
         authToken = sharedPreferences.getString("authToken","");

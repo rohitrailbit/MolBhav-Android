@@ -18,4 +18,7 @@
     <string name="todo">TODO</string>
     <string name="please_check_your_connection">Please Check Your Connection</string>
     <string name="connection_not_found">Connection Not Found</string>
+    <string name="log_out">Log Out</string>
+    <string name="dashboardicon">DashboardIcon</string>
+    <string name="catagory_management">Catagory Management</string>
 </resources>

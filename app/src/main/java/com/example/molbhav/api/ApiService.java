@@ -1,6 +1,7 @@
 package com.example.molbhav.api;
 
 
+import com.example.molbhav.entity.ProductCategory;
 import com.example.molbhav.entity.User;
 
 import java.util.List;
@@ -26,6 +27,12 @@ public interface ApiService {
 
     @GET("/api/user/{id}")
     Call<ResponseDTO<User>> getUserById(@Path("id") Integer id);
+
+    @GET("/api/product-category/")
+    Call<ResponseDTO<List<ProductCategory>>> getAllProductCategory();
+
+    @POST("/api/product-category/")
+    Call<ResponseDTO<Object>> addProductCategory(@Body ProductCategory productCategory);
 
 
 

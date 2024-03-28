@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.admin.catagory.catagoryManagement.CatagoryManagementFragment">
+
+    <include
+        android:layout_alignParentTop="true"
+        layout="@layout/main_toolbar"
+        android:id="@+id/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/fontsizeX10"
+        android:layout_marginHorizontal="@dimen/fontsizeX10"
+        android:layout_below="@+id/layout_toolbar"
+        android:scrollbars="vertical" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddCatagory"
+        android:text="Add Catagory"
+        android:layout_marginHorizontal="@dimen/fontsizeX10"
+        android:drawableEnd="@drawable/plus32"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
